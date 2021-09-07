@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroCarousal from '../components/HeroCarousal/HeroCarousal.component'
+import HeroCarousal from '../components/HeroCarousal/HeroCarousal.component';
 
 
 //components
 
-import Navbar from '../components/Navbar/Navbar.component'
+import Navbar from '../components/Navbar/Navbar.component';
 export default function DefaultLayout(props) {
     return (
        <>

@@ -34,7 +34,7 @@ const NavLg = () => {
         <div className="container flex items-center justify-between mx-auto px-4">
             <div className="flex items-center w-1/2">
                 <div className="w-12 h-12 ">
-                    <img src="" alt="logo" className="w-full h-full" />
+                    <img src="http://www.w3.org/2000/svg" alt="logo" className="w-full h-full" />
                 </div>
                 <div className="w-full flex items-center bg-white gap-3 rounded-md px-3 py-2">
                     <BiSearch />
