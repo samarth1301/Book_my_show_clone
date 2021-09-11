@@ -14,7 +14,7 @@ export const NextArrow=(props)=>{
             paddingBottom:"5px",
             alignItems:"center",
             width:"2rem",
-            height:"2.8rem"
+            height:"2rem"
         }}
         onClick={props.onClick}
         />
