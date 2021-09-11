@@ -11,7 +11,7 @@ export const NextArrow=(props)=>{
             display:"flex",
             borderRadius:"6px",
             justifyContent:"center",
-            paddingBottom:"5px",
+            
             alignItems:"center",
             width:"2rem",
             height:"2rem"
@@ -33,7 +33,7 @@ export const PrevArrow=(props)=>{
                
                 display:"flex",
                 borderRadius:"6px",
-                paddingBottom:"5px",
+                
                 justifyContent:"center",
                 alignItems:"center",
                 width:"2rem",
