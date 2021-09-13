@@ -30,18 +30,18 @@ export default function MovieHero() {
                         className='h-full w-full rounded-2xl'
                     />
                 </div>
-               {/*  <div className="absolute z-20 bg-allblack-600 opacity-80  right-20  left-76 top-10 w-26 h-10  backdrop-filter backdrop-blur">
+                <div className="absolute z-20 bg-allblack-600 opacity-80  right-20  left-76 top-10 w-26 h-10  backdrop-filter backdrop-blur">
                     
                     <button className="  text-white w-full h-full  rounded-lg px-2 py-1 flex ">
                     <p className="p-1"><BiShareAlt/></p><strong className="px-2">Share</strong>
                     </button>
-                </div> */}
-                <div className="absolute z-20 right-0 left-76 top-10">
+                </div>
+               {/*  <div className="absolute z-20 right-0 left-76 top-10">
                     
                     <button className="bg-allblack-800 opacity-70 px-4 text-white w-auto h-12 my-4 rounded-sm flex p-2">
                     <p className="p-1"><BiShareAlt/></p><strong className="px-2">Share</strong>
                     </button>
-                </div>
+                </div> */}
                 <div className="absolute z-20 left-1/3  top-20 w-1/3 h-full text-white">
                     <h1 className="text-4xl font-bold">Shang-Chi and the Legend of the Ten Rings</h1>
                     <span className="flex mt-2 "><p className="py-2">🧡</p><h1 className="mx-2 text-2xl">91%</h1><p className="mx-1 py-2">32.6k ratings</p></span>
