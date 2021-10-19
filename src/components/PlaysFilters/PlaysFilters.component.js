@@ -5,7 +5,7 @@ function MyDisclosure(props) {
         <Disclosure>
             {
                 ({ open }) => (
-                    <div className='bg-gray-100 my-4'>
+                    <div className='bg-gray-100 my-4 px-2'>
                         <Disclosure.Button className="py-2 flex items-center gap-3 ">
                            {
                                open?<BiChevronUp/>:<BiChevronDown/>

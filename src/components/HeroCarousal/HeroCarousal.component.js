@@ -15,7 +15,7 @@ export default function HeroCarousal() {
     useEffect(() => {
         const requestNowPlayingMovies=async()=>{
             const getImages=await axios.get('/movie/now_playing');
-            console.log(getImages);
+            setimages(getImages.data.results);
 
         }
         requestNowPlayingMovies();
@@ -54,7 +54,7 @@ export default function HeroCarousal() {
             {
                     images.map((image)=>(
                         <div className="w-full h-64 py-3 md:h-80">
-                            <img src={image} alt="Caraousel" className="w-full h-full rounded-md"/>
+                            <img src={`https://image.tmdb.org/t/p/original/${image.backdrop_path}`} alt="Caraousel" className="w-full h-full rounded-md"/>
                         </div>
                     ))
             }
@@ -70,7 +70,7 @@ export default function HeroCarousal() {
             {
                     images.map((image)=>(
                         <div className="w-full h-96 px-1 py-3 focus:border-0 border-transparent ">
-                            <img src={image} alt="Caraousel" className="w-full h-full rounded-md"/>
+                             <img src={`https://image.tmdb.org/t/p/original/${image.backdrop_path}`} alt="Caraousel" className="w-full h-full rounded-md"/>
                         </div>
                     ))
             }
