@@ -7,17 +7,19 @@ export default function roundPoster(props) {
         <div className="h-50">
         <img src={props.src} alt={props.title} className="w-full h-full rounded-full"/>
         </div>
+            <div className="flex flex-col items-center">
 
-        <h3 className={` text-center text-lg font-bold ${
-            props.isDark?"text-white":"text-gray-700"
-        }`}>
-            {props.title}
-            </h3>
-        <p
-        className={`text-center text-md  ${
-            props.isDark?"text-white":"text-gray-700"
-        }`}
-        >{props.subtitle}</p>
+                <h3 className={` text-center text-lg font-bold ${
+                    props.isDark?"text-white":"text-gray-700"
+                }`}>
+                    {props.title}
+                    </h3>
+                <p
+                className={`text-center text-md  ${
+                    props.isDark?"text-white":"text-gray-700"
+                }`}
+                >{props.subtitle}</p>
+            </div>
         </div>
             
         </>

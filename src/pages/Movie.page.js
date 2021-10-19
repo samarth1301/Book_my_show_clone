@@ -36,7 +36,10 @@ export default function Movie() {
 
     return (
         <>
+            
+
             <MovieHero />
+           
             <div className='my-12 container  px-4 lg:w-1/2 lg:ml-64 md:w-full md:mx-auto ' >
                 <div className='flex flex-col items-start gap-3' >
                     <h2 className='text-gray-800 font-bold text-2xl'>About the movie</h2>

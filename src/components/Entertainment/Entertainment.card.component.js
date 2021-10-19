@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 function EntertainmentCard(props) {
     return (
@@ -35,7 +36,9 @@ const EntertainmentCardSlider=()=>{
     return(
         <Slider {...settings}>
             {EntertainmentImage.map((image)=>(
-                <EntertainmentCard src={image} />
+                <Link to="/plays">
+                    <EntertainmentCard src={image} />
+                </Link>
             ))}
         </Slider>
     )

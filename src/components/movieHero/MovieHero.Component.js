@@ -1,8 +1,34 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import {BiShareAlt} from "react-icons/bi";
 export default function MovieHero() {
 
+    //brings you to the top of the page on ech render of movie page
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+
+
+
+
+
+    const launchRazorPay = () => {
+        let options = {
+            key: "rzp_test_vlN9MkaWuTukah",
+            amount: 500 * 100,
+            currency: "INR",
+            name: "Book My Show Clone",
+            description: "Movie Purchase on Rental",
+            image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+            handler: () => {
+                alert("Payment Done")
+            },
+            theme: { color: "#c4242d" }
+        };
+        let rzp = new window.Razorpay(options);
+        rzp.open();
+    };
     return (
         <>
             <div className='md:hidden' style={{ height: 'calc(50vw)' }}>
@@ -30,9 +56,9 @@ export default function MovieHero() {
                         className='h-full w-full rounded-2xl'
                     />
                 </div>
-                <div className="absolute z-20 bg-allblack-600 opacity-80  right-20  left-76 top-10 w-26 h-10  backdrop-filter backdrop-blur">
+                <div className="absolute z-20 bg-allblack-600 opacity-80 rounded-lg right-20  left-76 top-10 w-26 h-10  backdrop-filter backdrop-blur">
                     
-                    <button className="  text-white w-full h-full  rounded-lg px-2 py-1 flex ">
+                    <button  className="  text-white w-full h-full  px-2 py-1 flex items-center">
                     <p className="p-1"><BiShareAlt/></p><strong className="px-2">Share</strong>
                     </button>
                 </div>
@@ -55,7 +81,7 @@ export default function MovieHero() {
                     <h3 className="bg-white text-black my-2 rounded-sm w-max p-1">2d, 3D, IMAX 2D, MX4D, 4DX</h3>
                     <h3 className="bg-white text-black my-2 rounded-sm w-max p-1 ">English, Kannada, Tamil, Hindi, Telugu, Malayalam</h3>
                     <h3 className="mt-4">2h 12m • Action, Adventure , Fantasy • UA • 3 Sep, 2021</h3>
-                    <button className="bg-red-500 px-12 text-white w-auto h-12 my-4 rounded-md"><strong>Book Tickets</strong></button>
+                    <button onClick={launchRazorPay} className="bg-red-500 px-12 text-white w-auto h-12 my-4 rounded-md"><strong>Book Tickets</strong></button>
                 </div>
                 <img src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shang-chi-and-the-legend-of-the-ten-rings-et00122566-24-08-2021-02-01-36.jpg" alt="poster"
                     className='w-full h-full rounded-xl' />
