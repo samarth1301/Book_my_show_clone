@@ -3,7 +3,7 @@ import React from 'react'
 export default function roundPoster(props) {
     return (
         <>
-        <div className="flex flex-col items-start gap-2 px-3 ">
+        <div className="flex flex-col items-center items-start gap-2 px-3 ">
         <div className="h-50">
         <img src={props.src} alt={props.title} className="w-full h-full rounded-full"/>
         </div>

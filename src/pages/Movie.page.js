@@ -54,7 +54,7 @@ export default function Movie() {
                 <div className='flex flex-col items-start gap-3'>
                     <h1 className='text-xl'>Applicable offers</h1>
 
-                    <div className='flex items-start gap-2 bg-yellow-100 border-yellow-400 border-2 border-dashed  rounded-md p-3 w-96' >
+                    <div className='flex items-start gap-2 bg-yellow-100 border-yellow-400 border-2 border-dashed  rounded-md p-3 sm:w-full md:w-96' >
                         <div className='w-8 h-8' >
                             <BiCameraMovie className='w-full h-full' />
 
